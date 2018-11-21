@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    overflow: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0 3rem 0 0;
+}
+
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    font-weight: bolder
+}

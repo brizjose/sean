@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Position</th>
+      <th>Number</th>
+      <th>Username</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{player?.first_name}}</td>
+      <td>{{player?.last_name}}</td>
+      <td>{{player?.position}}</td>
+      <td>{{player?.number}}</td>
+      <td>{{player?.user_name}}</td>
+      <td><button type="button">Page</button></td>
+    </tr>
+  </tbody>
+</table>

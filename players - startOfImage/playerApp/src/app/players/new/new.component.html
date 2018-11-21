@@ -1,0 +1,48 @@
+<form (submit)="createPlayer($event, form)" #form='ngForm'>
+  <table class="form-group">
+    <tr>
+      <th>First Name</th>
+      <td><input type="text" name="first_name"
+        [(ngModel)]="player.first_name"
+        ></td>
+        {{player.first_name}}
+    </tr>
+    <tr>
+      <th>Last Name</th>
+      <td><input type="text" name="last_name"
+        [(ngModel)]="player.last_name"
+        ></td>
+        {{player.last_name}}
+    </tr>
+    <tr>
+      <th>Position</th>
+      <td><input type="text" name="position"
+        [(ngModel)]="player.position"
+        ></td>
+        {{player.position}}
+    </tr>
+    <tr>
+      <th>Number</th>
+      <td><input type="number" name="number"
+        [(ngModel)]="player.number"
+        ></td>
+        {{player.number}}
+    </tr>
+    <tr>
+      <th>Username</th>
+      <td><input type="text" name="username"
+        [(ngModel)]="player.username"
+        ></td>
+        {{player.username}}
+    </tr>
+    <tr>
+      <th>Photo</th>
+      <td><input type="file" name="uploaded_file"
+        [(ngModel)]="player.uploaded_file"
+        ></td>
+    </tr>
+  </table>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
